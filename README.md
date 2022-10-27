@@ -7,7 +7,7 @@
 Фронтэнд:
   - [React](https://reactjs.org/) (через [create-react-app](https://github.com/facebook/create-react-app))
   - [React router](https://reactrouter.com/en/main)
-  - Так же внутри будут использоваться CSS модули. Подробнее здесь https://create-react-app.dev/docs/adding-a-css-modules-stylesheet.
+  - CSS модули. Подробнее здесь https://create-react-app.dev/docs/adding-a-css-modules-stylesheet.
 
 Бэкэнд:
   - [Laravel](https://laravel.com/)
