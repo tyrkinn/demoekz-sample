@@ -12,6 +12,7 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Class Application
  * 
+ * @property string $name
  * @property int $id
  * @property string|null $description
  * @property string|null $photo_url
@@ -38,6 +39,7 @@ class Application extends Model
 	];
 
 	protected $fillable = [
+		'name',
 		'description',
 		'photo_url',
 		'category_id',
