@@ -1,6 +1,7 @@
 <?php
+
+use App\Http\Controllers\ApplicationController;
 use App\Http\Controllers\TestController;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/test', [TestController::class, 'index']);
+
+Route::controller(ApplicationController::class)->prefix('applications')->group(function () {
+  Route::get('/', 'getAll');
+  Route::get('/solved', 'getLastFiveSolved');
+  Route::get('/{id}', 'getById');
+  Route::post('/', 'create');
+});
