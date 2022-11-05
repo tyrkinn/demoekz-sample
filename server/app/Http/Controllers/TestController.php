@@ -4,12 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 
-use Illuminate\Http\Request;
+class TestController extends Controller
+{
 
-class TestController extends Controller {
-
-    public function index() {
-        return "42";
+    public function index()
+    {
+        return "54";
     }
-
 }
